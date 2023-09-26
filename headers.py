@@ -1,0 +1,16 @@
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+    # 'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Referer': 'https://iptorrents.com/t?q=oppenheimer;o=seeders',
+    # 'Cookie': 'cf_clearance=cEkWlA2fsWkPiOLKnPuDE_RWlTw8Yf3mgMQFZJ1wsb0-1693027046-0-1-b72d3454.fc63ad3d.e02c6bb4-150.0.0; uid=2026505; pass=trTHTlxOvYREkLDul8spMlCTczgKgjbH',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Pragma': 'no-cache',
+    'Cache-Control': 'no-cache',
+}

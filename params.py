@@ -1,0 +1,4 @@
+params = {
+    'q': 'oppenheimer',
+    'qf': '',
+}
