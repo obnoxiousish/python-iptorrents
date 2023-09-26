@@ -9,6 +9,10 @@ searchResults = instance.search(
     "oppenheimer",
     o="seeders",
 )
+instance.downloadTorrent(
+    torrentLink=searchResults['results'][0]['dotTorrentDownloadLink'],
+    directory='.',
+)
 ```
 
 also
@@ -18,6 +22,10 @@ instance = IPTorrents(beAsync=True, debugInfo=True)
 await searchResults = instance.asyncSearch(
     "oppenheimer"
     o="seeders",
+)
+await instance.downloadTorrent(
+    torrentLink=searchResults['results'][0]['dotTorrentDownloadLink'],
+    directory=".",
 )
 ```
 

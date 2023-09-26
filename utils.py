@@ -46,11 +46,17 @@ class sharedData:
             if '/t/' in link:
                 if self.debugInfo:
                     print(f'Found: {text} - {link}')
+                    
+                #print(htmlText, file=open('html.txt', 'w'))
+                torrentId = link.split('/t/')[1].split('/')[0]
+                dotTorrentDownloadLink = htmlText.split(f'<a href="/download.php/{torrentId}')[1].split('"')[0]
+                dotTorrentDownloadLink = f'https://iptorrents.com/download.php/{torrentId}/{dotTorrentDownloadLink}'
 
                 searchResultsParsed['results'].append(
                     {
                         'torrentName': text,
                         'torrentLink': link,
+                        'dotTorrentDownloadLink': dotTorrentDownloadLink,
                     }
                 )
 
