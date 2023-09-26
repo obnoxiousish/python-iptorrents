@@ -1,4 +1,3 @@
-from cookies import cookies
 from headers import headers
 from params import params
 
@@ -9,6 +8,12 @@ class sharedData:
         self.debugInfo = debugInfo
         self.searchHeaders = headers
         self.searchParams = params
+        
+        if not self.debugInfo:
+            from cookies import cookies
+        else:
+            from cookiesDebug import cookies
+            
         self.searchCookies = cookies
         
     def parseHTMLForSearchResults(self, htmlText, query):
