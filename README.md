@@ -10,3 +10,15 @@ searchResults = instance.search(
     o="seeders",
 )
 ```
+
+also
+
+```
+instance = IPTorrents(beAsync=True, debugInfo=True)
+await searchResults = instance.asyncSearch(
+    "oppenheimer"
+    o="seeders",
+)
+```
+
+should work with asyncio and trio, and i imagine anyio and curio idk for sure tho, didnt even test it
